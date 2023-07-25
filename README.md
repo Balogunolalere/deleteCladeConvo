@@ -19,14 +19,14 @@
 
     Set the SESSION_KEY and ACCOUNT_ID environment variables
 
-### Usage
+## Usage
 
 
-$ python manager.py --help
+    $ python manager.py --help
 
-Usage: manager.py [OPTIONS] COMMAND [ARGS]...
+    Usage: manager.py [OPTIONS] COMMAND [ARGS]...
 
-  Options:
+### Options:
 
     --install-completion  Install completion for the current shell.
     --show-completion     Show completion for the current shell, to copy it or
@@ -34,35 +34,38 @@ Usage: manager.py [OPTIONS] COMMAND [ARGS]...
 
     --help                Show this message and exit.
 
-  Commands:
+### Commands:
 
     delete-conversation  Delete a conversation by UUID.
     delete-conversations  Delete all conversations. 
     fetch-conversations   Fetch all conversations.
 
-Fetch conversations
+### Fetch conversations
 
 
-$ python manager.py fetch-conversations
+    $ python manager.py fetch-conversations
 
-This will make a request to fetch all conversations and print them to the console.
-Delete a conversation
+    This will make a request to fetch all conversations and print them to the console.
 
-
-$ python manager.py delete-conversation [uuid]
-
-Delete a conversation by its UUID.
-Delete all conversations
+### Delete a conversation
 
 
-$ python manager.py delete-conversations
+    $ python manager.py delete-conversation [uuid]
 
-Loop through and delete all conversations.
-Environment Variables
+    Delete a conversation by its UUID.
+
+### Delete all conversations
+
+
+    $ python manager.py delete-conversations
+
+    Loop through and delete all conversations.
+
+### Environment Variables
 
     SESSION_KEY - Claude session key
     ACCOUNT_ID - Claude account ID
 
 ### Contributing
 
-Pull requests are welcome. Feel free to open an issue first to discuss what you would like to change.
+    Pull requests are welcome. Feel free to open an issue first to discuss what you would like to change.
