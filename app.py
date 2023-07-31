@@ -4,6 +4,7 @@ import requests
 from time import sleep
 from dotenv import load_dotenv
 import os
+from typing import List
 
 load_dotenv()
 
@@ -56,6 +57,12 @@ def delete_conversation(uuid: str):
         typer.echo(f"Conversation {uuid} deleted successfully!")
     else:
         typer.echo(f"Failed to delete conversation {uuid}")
+
+@app.command()        
+def delete_conversations_list(uuids: List[str]):
+    for uuid in uuids:
+        delete_conversation(uuid)   
+
         
 @app.command()        
 def delete_conversations():
