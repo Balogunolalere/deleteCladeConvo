@@ -38,7 +38,9 @@
 
     delete-conversation  Delete a conversation by UUID.
     delete-conversations  Delete all conversations. 
+    delete-conversations_list Delete all conversations from a list of UUIDs.
     fetch-conversations   Fetch all conversations.
+
 
 ### Fetch conversations
 
